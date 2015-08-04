@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site">
+	<name>Directory Display</name>
+	<author>Blake Kidney</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (C) 2015 Blake Kidney</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<version>1.0.0</version>
+	<description>This module will display all the files within a directory and subdirectories as a list of links.</description>
+	<files>
+		<filename module="mod_directorydisplay">mod_directorydisplay.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="directory" 
+					type="text" 
+					default="images" 
+					size="255"
+					label="Directory"
+					description="The path to the directory on the server that is accessible through the browser. Must include the full path if not a branch of the Joomla root." 
+				/>
+			</fieldset>
+		</fields>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="extensions" 
+					type="text" 
+					default="pdf,rtf,doc,docx,ppt,pptx,xls,xlsx" 
+					size="255"
+					label="Allowed Extensions"
+					description="The file extensions that are allowed to be listed and displayed separated as a comma. " 
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,12 @@
+/*
+This should be added to the CSS in the template.
+*/
+.directorydisplay ul { list-style-type:none; }
+.directorydisplay li.folder + li.file { margin-top:10px; }
+.directorydisplay [class^="icon-"]::before, 
+.directorydisplay [class*=" icon-"]::before {
+	margin-right: 10px;
+}
+.directorydisplay .toggle { padding-left:28px; }
+.directorydisplay .toggle + ul { padding-left: 6px; }
+}
